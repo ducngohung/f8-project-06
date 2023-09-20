@@ -53,6 +53,22 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  width: 170px;
+  height: 62px;
+  background: var(--primary-color);
+  color: #fdfdfd;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 6rem; /* 166.667% */
+  display: block;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
 /* Header Nav */
 .header {
   background: #fbfaff;
@@ -66,6 +82,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
+  margin-bottom: 44px;
 }
 
 .nav-mobile,
@@ -126,4 +143,80 @@ a {
 
 .nav-menu__item:hover a {
   text-decoration: underline;
+}
+
+/* Header Hero */
+.hero-media {
+  width: 88%;
+  position: relative;
+}
+
+.hero-media-image {
+  width: 90%;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-media-decor {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-85%);
+  z-index: 1;
+  height: 110%;
+}
+
+.hero-info__header {
+  width: 500px;
+  color: #080415;
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 7.6rem; /* 95% */
+  letter-spacing: -0.32rem;
+  margin-bottom: 20px;
+}
+
+.hero-info__desc {
+  margin-bottom: 50px;
+  width: 370px;
+  color: #51586a;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem; /* 166.667% */
+}
+
+.hero-info {
+  padding-left: 30px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.hero-cta__link {
+  color: #080415;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 3rem; /* 166.667% */
+  text-decoration-line: underline;
+}
+
+.header .row {
+  align-items: center;
+}
+
+.hero-follow {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  /* margin-bottom: 38px; */
+}
+
+.hero-follow__list {
+  color: #51586a;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3rem; /* 187.5% */
 }

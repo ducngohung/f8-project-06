@@ -232,7 +232,7 @@
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    z-index: 98;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease;
@@ -269,10 +269,51 @@
     position: fixed;
     inset: 0 0 0 40%;
     background: #d6d3e2;
-    z-index: 2;
+    z-index: 99;
     padding: 60px;
     transform: translateX(100%);
     transition: 0.3s ease;
+  }
+
+  /* Section Hero on mobile */
+  .header .row {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+
+  .container .hero-media {
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    /* order: 2; */
+  }
+
+  .hero-info .hero-info__header {
+    width: 260px;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 5rem; /* 119.048% */
+    letter-spacing: -0.168rem;
+  }
+
+  .hero-info .hero-info__desc {
+    width: 318px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    margin-bottom: 30px;
+  }
+
+  .hero-info .hero-cta__btn {
+    width: 147px;
+    height: 55px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 5.5rem; /* 187.5% */
+  }
+
+  .hero-info .hero-cta {
+    margin-bottom: 25px;
   }
 }
 
