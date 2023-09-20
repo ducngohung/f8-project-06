@@ -171,7 +171,113 @@
   --column-number: 12;
 }
 
+@media screen and (max-width: 767.99px) {
+  /* hide nav on PC */
+  .header > .nav {
+    display: none;
+  }
+
+  /* show nav on mobile */
+  .container > .nav-mobile {
+    display: block;
+    padding-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+
+  .nav-mobile__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-mobile__icon {
+    width: 32px;
+  }
+
+  .nav-mobile__icon > img {
+    width: 100%;
+  }
+
+  .nav-mobile__menu-icon > img {
+    width: 70%;
+  }
+  .toggle-menu,
+  .nav-mobile__menu-icon {
+    color: #5d3bee;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgb(93 59 235 / 20%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .container .nav-mobile__bar {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #d6d3e2;
+    margin-bottom: 50px;
+  }
+
+  .header > .mobile-only {
+    display: block;
+  }
+
+  .drawer-menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+  }
+
+  .drawer-menu-check:checked ~ .drawer-menu-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .drawer-menu-check:checked ~ .drawer-menu {
+    transform: translateX(0);
+  }
+
+  .drawer-menu > .mobile-nav-menu {
+    display: block;
+  }
+
+  .mobile-nav-menu__item {
+    margin-bottom: 40px;
+  }
+
+  .mobile-nav-menu__item:hover a {
+    text-decoration: underline;
+  }
+
+  .mobile-nav-menu__item a {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .drawer-menu {
+    position: fixed;
+    inset: 0 0 0 40%;
+    background: #d6d3e2;
+    z-index: 2;
+    padding: 60px;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) {
   .container {
     --spacer: 24px;
@@ -302,6 +408,8 @@
   .row-cols-sm-6 > * {
     --row-cols-number: 6;
   }
+
+  /* head menu on phone */
 }
 
 /* Medium devices (tablets, 768px and up) */

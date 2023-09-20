@@ -45,6 +45,105 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header class="header">
+      <!-- <div class="container"> -->
+      <!-- Nav on PC -->
+      <div class="nav">
+        <div class="nav-contact">
+          <div class="nav-contact__icon">
+            <img src="assets/icon/heart.png" alt="" class="nav-contact__img" />
+          </div>
+          <p class="nav-contact__email">hi@arif.interactive</p>
+        </div>
+        <div class="nav-icon">
+          <img src="assets/icon/boy-head.png" alt="" class="nav-icon__image" />
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-menu__list">
+            <li class="nav-menu__item">
+              <a href="#!">Projects</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#!">Journey</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#!">Service</a>
+            </li>
+            <li class="nav-menu__item">
+              <a href="#!">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Nav on Mobile -->
+      <div class="container">
+        <nav class="nav-mobile">
+          <div class="nav-mobile__icon">
+            <img src="assets/icon/boy-head.png" alt="" />
+          </div>
+          <div class="nav-mobile__menu">
+            <div class="nav-mobile__menu-icon">
+              <img src="assets/icon/heart.png" alt="" />
+            </div>
+            <label for="drawer-menu-check" class="toggle-menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                ></path>
+              </svg>
+            </label>
+          </div>
+        </nav>
+        <div class="nav-mobile__bar"></div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <input
+          type="checkbox"
+          name="drawer-menu-check"
+          id="drawer-menu-check"
+          class="drawer-menu-check"
+          hidden
+        />
+        <label for="drawer-menu-check" class="drawer-menu-overlay"></label>
+        <div class="drawer-menu">
+          <!-- navigation -->
+          <div class="mobile-nav-menu">
+            <ul class="mobile-nav-menu__list">
+              <li class="mobile-nav-menu__item">
+                <a href="#!">Projects</a>
+              </li>
+              <li class="mobile-nav-menu__item">
+                <a href="#!">Journey</a>
+              </li>
+              <li class="mobile-nav-menu__item">
+                <a href="#!">Service</a>
+              </li>
+              <li class="mobile-nav-menu__item">
+                <a href="#!">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+      <div class="container">
+        <div class="row g-0">
+          <div class="col col-md-6 col-sm-12 col-12">
+            <div class="inner">Item 1</div>
+          </div>
+          <div class="col col-md-6 col-sm-12 col-12">
+            <div class="inner">Item 2</div>
+          </div>
+        </div>
+      </div>
+    </header>
   </body>
 </html>
